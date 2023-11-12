@@ -1,1 +1,14 @@
+on:
+  push:
+    branches:
+	- somiasrour
 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+	- name: 'somia'
+	  run: pwd
+	- name: 'srour'
+	  run: echo somia
