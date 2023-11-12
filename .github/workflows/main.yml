@@ -10,6 +10,6 @@ jobs:
       - name: "Login to docker hub"
         run: docker login --username ${{ secrets.USERNAME }} --password ${{ secrets.TOCKEN }}
       - name: "building docker image"
-        run: docker build -t ${{ secrets.USERNAME }}/somia .
+        run: docker build -t ${{ secrets.USERNAME }}/myImage .
       - name: "pushing image"
-        run: docker push ${{ secrets.USERNAME }}/somia
+        run: docker push ${{ secrets.USERNAME }}/myImage
