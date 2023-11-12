@@ -8,4 +8,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: "Login to docker hub"
-        run: docker login --username ${{ secrets.DOCKER }} --password ${{ secrets.TOKEN }}
+        run: docker login --username ${{ secrets.USERNAME }} --password ${{ secrets.TOCKEN }}
