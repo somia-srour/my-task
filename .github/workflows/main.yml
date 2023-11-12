@@ -2,8 +2,6 @@ on:
   push:
     branches:
       - my-task
-
-
 jobs:
   build:
     runs-on: ubuntu-latest
